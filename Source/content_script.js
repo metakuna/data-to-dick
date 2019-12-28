@@ -39,10 +39,10 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bdata\b/g, "dick");
-	v = v.replace(/\bData\b/g, "Dick");
 	v = v.replace(/\bdata are\b/g, "dicks are");
 	v = v.replace(/\bData are\b/g, "Dicks are");
+	v = v.replace(/\bdata\b/g, "dick");
+	v = v.replace(/\bData\b/g, "Dick");
 	
 	textNode.nodeValue = v;
 }
